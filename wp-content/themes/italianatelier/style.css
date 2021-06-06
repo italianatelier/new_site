@@ -19,83 +19,84 @@ Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
 Twenty Twenty-One is distributed under the terms of the GNU GPL.
 */
 
-/**
- * SETTINGS
- * File-header..........The file header for the themes style.css file.
- * Fonts................Any font files, if the project needs specific fonts.
- * Global...............Project-specific, globally available variables.
- *
- * TOOLS
- * Functions............Global functions.
- * Mixins...............Global mixins.
- *
- * GENERIC
- * Normalize.css........Normalise browser defaults.
- * Breakpoints..........Mixins and variables for responsive styles
- * Vertical-margins.....Vertical spacing for the main components.
- * Reset................Reset specific elements to make them easier to style in other contexts.
- * Clearings............Clearings for the main components.
- *
- * ELEMENTS
- * Blockquote...........Default blockquote.
- * Forms................Element-level form styling.
- * Headings.............H1–H6
- * Links................Default links.
- * Lists................Default lists.
- * Media................Images, Figure, Figcaption, Embed, iFrame, Objects, Video.
- *
- * BLOCKS
- * Audio................Specific styles for the audio block.
- * Button...............Specific styles for the button block.
- * Code.................Specific styles for the code block.
- * Columns..............Specific styles for the columns block.
- * Cover................Specific styles for the cover block.
- * File.................Specific styles for the file block.
- * Gallery..............Specific styles for the gallery block.
- * Group................Specific styles for the group block.
- * Heading..............Specific styles for the heading block.
- * Image................Specific styles for the image block.
- * Latest comments......Specific styles for the latest comments block.
- * Latest posts.........Specific styles for the latest posts block.
- * Legacy...............Specific styles for the legacy gallery.
- * List.................Specific styles for the list block.
- * Media text...........Specific styles for the media and text block.
- * Navigation...........Specific styles for the navigation block.
- * Paragraph............Specific styles for the paragraph block.
- * Pullquote............Specific styles for the pullquote block.
- * Quote................Specific styles for the quote block.
- * Search...............Specific styles for the search block.
- * Separator............Specific styles for the separator block.
- * Spacer...............Specific styles for the spacer block.
- * Table................Specific styles for the table block.
- * Verse................Specific styles for the verse block.
- * Video................Specific styles for the video block.
- * Utilities............Block alignments.
- *
- * COMPONENTS
- * Header...............Header styles.
- * Footer...............Footer styles.
- * Comments.............Comment styles.
- * Archives.............Archive styles.
- * 404..................404 styles.
- * Search...............Search styles.
- * Navigation...........Navigation styles.
- * Footer Navigation....Footer Navigation styles.
- * Pagination...........Pagination styles.
- * Single...............Single page and post styles.
- * Posts and pages......Misc, sticky post styles.
- * Entry................Entry, author biography.
- * Widget...............Widget styles.
- * Editor...............Editor styles.
- *
- * UTILITIES
- * A11y.................Screen reader text, prefers reduced motion etc.
- * Color Palette........Classes for the color palette colors.
- * Editor Font Sizes....Editor Font Sizes.
- * Measure..............The width of a line of text, in characters.
- */
+/*Body font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
-/* Categories 01 to 03 are the basics. */
+/* Title font */
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /* Variables */
 :root {
@@ -104,7 +105,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
 
 	/* Colors */
-	--global--main-color:#C39C4F;
 	--color-main:#C39C4F;
 	--color-body-text:#0D0E0E;
 
@@ -114,17 +114,58 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .container{
 	max-width:1374px;
 }
+ul{
+    margin:0;
+    padding:0;
+}
 ul li{
 	list-style: none;
 }
-.main-color,
 a{
-	color:var(--global--main-color);
+    color:#262626;
 }
-
+.color-main,
+a:hover{
+	color:var(--color-main);
+}
+a:hover{
+    text-decoration: none;
+}
+.font-weight-normal{
+    font-weight:300 !important;
+}
+.bold{
+    font-weight:500;
+}
+.font-title{
+	font-family: 'Hatton';
+    line-height:1.25;
+    font-weight: normal;
+    font-size:36px;
+}
+.font-title.bold{
+    font-weight:500;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    line-height:1.5;
+    text-align:left;
+    font-size:20px;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+.sec{
+    margin-bottom:120px;
+}
+.sec-margin{
+    margin-bottom:120px;
+}
 /** End Default styles **/
 #site-header{
-	padding:36px 60px 0;
+	padding:36px 60px;
 }
 #head-menu-icon{
 	width:25px;
@@ -134,7 +175,7 @@ a{
 	display:block;
 	border-radius:2px;
 	height:2px;
-	background:var(--global--main-color);
+	background:var(--color-main);
 	border-radius:20px;
 }
 #head-menu-icon span + span{
@@ -142,4 +183,60 @@ a{
 }
 #site-footer{
 	padding:145px 0;
+}
+#sec-about-intro{
+    margin-top:120px;
+}
+#sec-about-intro .main-tit{
+    font-size:64px;
+    margin-bottom:37px;
+}
+#sec-about-intro .cont{
+    margin:0 auto 60px;
+    max-width:992px;
+}
+#sec-about-intro .img{
+    padding-bottom:120px;
+    border-bottom:1px solid var(--color-main);
+}
+#sec-our-team .main-tit{
+    font-size:36px;
+}
+#sec-our-team .group-name{
+    font-size:28px;
+}
+.item-staff *{
+    font-size:24px;
+}
+.item-staff .tmb{
+    margin-bottom:10px;
+}
+.item-staff .name{
+    font-size:24px;
+}
+.item-staff .pos{
+    font-weight: normal;
+    margin:0;
+}
+#sec-our-values .main-tit{
+    margin-bottom:60px;
+}
+#sec-our-values .slogans{
+    font-size:78px;
+}
+#sec-our-values .slogans .it{
+    margin-bottom:28px;
+}
+#footer-menu{
+    min-height:242px;
+}
+.item-branch{
+    margin-bottom:40px;
+}
+.item-branch .tit{
+    font-size:20px;
+    border-bottom:1px solid #E5E5E5;
+}
+#footer-connect .tit{
+    font-size:20px;
 }

@@ -1,5 +1,5 @@
 <?php
-define('URL',get_template_directory_uri().'/');
+define('THEME_URL',get_template_directory_uri().'/');
 // This theme requires WordPress 5.3 or later.
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';

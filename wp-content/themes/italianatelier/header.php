@@ -31,7 +31,7 @@
 					<span></span>
 				</div>
 				<a id="head-logo">
-					<img src="<?php echo URL.'assets/images/main-logo.svg'?>" alt= ""/>
+					<img src="<?php echo THEME_URL.'assets/images/main-logo.svg'?>" alt= ""/>
 				</a>
 				<ul id="head-langs">
 					<li><a href="#">EN</a></li>
