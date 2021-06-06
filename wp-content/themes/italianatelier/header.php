@@ -34,7 +34,7 @@
 					<img src="<?php echo THEME_URL.'assets/images/main-logo.svg'?>" alt= ""/>
 				</a>
 				<ul id="head-langs">
-					<li><a href="#">EN</a></li>
+					<li><a class="color-main" href="#">EN</a></li>
 				</ul>
 		</div>
 	</header>

@@ -101,8 +101,8 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 /* Variables */
 :root {
 	/* Font Family */
-	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
-	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+    --font-weight-300:300;
+    --font-size-footer:16px;
 
 	/* Colors */
 	--color-main:#C39C4F;
@@ -110,10 +110,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 }
 
-/** End default styles **/
-.container{
-	max-width:1374px;
-}
+/** Start default styles **/
 ul{
     margin:0;
     padding:0;
@@ -163,6 +160,9 @@ img{
 .sec-margin{
     margin-bottom:120px;
 }
+.inline-its > *{
+    display: inline-block;
+}
 /** End Default styles **/
 #site-header{
 	padding:36px 60px;
@@ -180,9 +180,6 @@ img{
 }
 #head-menu-icon span + span{
 	margin-top:7px;
-}
-#site-footer{
-	padding:145px 0;
 }
 #sec-about-intro{
     margin-top:120px;
@@ -227,16 +224,85 @@ img{
 #sec-our-values .slogans .it{
     margin-bottom:28px;
 }
+#site-footer{
+	padding:145px 0;
+    font-size:var(--font-size-footer);
+}
 #footer-menu{
     min-height:242px;
 }
 .item-branch{
     margin-bottom:40px;
+    font-size:16px;
 }
 .item-branch .tit{
     font-size:20px;
     border-bottom:1px solid #E5E5E5;
+    max-width:241px;
 }
 #footer-connect .tit{
-    font-size:20px;
+    font-size:24px;
+}
+#footer-info .list-its > *{
+    margin-bottom:10px;
+}
+#form-subscribe{
+    max-width:585px;
+}
+#form-subscribe .input-wpr{
+    margin-bottom:23px;
+    position: relative;
+    border-bottom:1px solid var(--color-main);
+}
+#form-subscribe .input{
+    display:block;
+    width:100%;
+    border:none;
+    outline:none;
+    padding:8px 0;
+    font-family: inherit;
+    font-weight: var(--font-weight-300);
+    font-size:var(--font-size-footer);
+}
+
+#form-subscribe select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    background: url('assets/images/select-arrow.svg') no-repeat center right;
+}
+#submit-subscription{
+    font-size:var(--font-size-footer);
+    font-family: inherit;
+    font-weight: 300;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#submit-subscription:hover{
+    color:var(--color-main);
+}
+#footer-connect{
+    margin-bottom:80px;
+}
+#footer-connect .social-lbl{
+    margin-bottom:10px;
+    font-size:var(--font-size-footer);
+    font-weight: var(--font-weight-300);
+    font-family: inherit;
+}
+#footer-bottom-cont{
+    font-size:18px;
+}
+#footer-bottom-cont .info{
+    font-size:10px;
+}
+#footer-bottom-cont .info > *{
+    margin:10px 15px;
+}
+@media (min-width: 1400px){
+    .container{
+        max-width:1374px;
+    }
 }
