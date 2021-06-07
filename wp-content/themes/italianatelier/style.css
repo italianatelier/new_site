@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Italian Atelier
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 5.7
+Requires PHP: 5.6
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
+Twenty Twenty-One is distributed under the terms of the GNU GPL.
+*/
+
+/*Body font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/* Title font */
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Medium.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hatton';
+    src: url('assets/fonts/Hatton-Regular.woff2') format('woff2'),
+        url('assets/fonts/Hatton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* Variables */
+:root {
+	/* Font Family */
+    --font-weight-300:300;
+    --font-size-footer:16px;
+
+	/* Colors */
+	--color-main:#C39C4F;
+	--color-body-text:#0D0E0E;
+
+}
+
+/** Start default styles **/
+ul{
+    margin:0;
+    padding:0;
+}
+ul li{
+	list-style: none;
+}
+a{
+    color:#262626;
+}
+.color-main,
+a:hover{
+	color:var(--color-main);
+}
+a:hover{
+    text-decoration: none;
+}
+.font-weight-normal{
+    font-weight:300 !important;
+}
+.bold{
+    font-weight:500;
+}
+.font-title{
+	font-family: 'Hatton';
+    line-height:1.25;
+    font-weight: normal;
+    font-size:36px;
+}
+.font-title.bold{
+    font-weight:500;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    line-height:1.5;
+    text-align:left;
+    font-size:20px;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+.sec{
+    margin-bottom:120px;
+}
+.sec-margin{
+    margin-bottom:120px;
+}
+.inline-its > *{
+    display: inline-block;
+}
+/** End Default styles **/
+#site-header{
+	padding:36px 60px;
+}
+#head-menu-icon{
+	width:25px;
+	cursor: pointer;
+}
+#head-menu-icon span{
+	display:block;
+	border-radius:2px;
+	height:2px;
+	background:var(--color-main);
+	border-radius:20px;
+}
+#head-menu-icon span + span{
+	margin-top:7px;
+}
+#sec-about-intro{
+    margin-top:120px;
+}
+#sec-about-intro .main-tit{
+    font-size:64px;
+    margin-bottom:37px;
+}
+#sec-about-intro .cont{
+    margin:0 auto 60px;
+    max-width:992px;
+}
+#sec-about-intro .img{
+    padding-bottom:120px;
+    border-bottom:1px solid var(--color-main);
+}
+#sec-our-team .main-tit{
+    font-size:36px;
+}
+#sec-our-team .group-name{
+    font-size:28px;
+}
+.item-staff *{
+    font-size:24px;
+}
+.item-staff .tmb{
+    margin-bottom:10px;
+}
+.item-staff .name{
+    font-size:24px;
+}
+.item-staff .pos{
+    font-weight: normal;
+    margin:0;
+}
+#sec-our-values .main-tit{
+    margin-bottom:60px;
+}
+#sec-our-values .slogans{
+    font-size:78px;
+}
+#sec-our-values .slogans .it{
+    margin-bottom:28px;
+}
+#site-footer{
+	padding:145px 0;
+    font-size:var(--font-size-footer);
+}
+#footer-menu{
+    min-height:242px;
+}
+.item-branch{
+    margin-bottom:40px;
+    font-size:16px;
+}
+.item-branch .tit{
+    font-size:20px;
+    border-bottom:1px solid #E5E5E5;
+    max-width:241px;
+}
+#footer-connect .tit{
+    font-size:24px;
+}
+#footer-info .list-its > *{
+    margin-bottom:10px;
+}
+#form-subscribe{
+    max-width:585px;
+}
+#form-subscribe .input-wpr{
+    margin-bottom:23px;
+    position: relative;
+    border-bottom:1px solid var(--color-main);
+}
+#form-subscribe .input{
+    display:block;
+    width:100%;
+    border:none;
+    outline:none;
+    padding:8px 0;
+    font-family: inherit;
+    font-weight: var(--font-weight-300);
+    font-size:var(--font-size-footer);
+}
+
+#form-subscribe select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    background: url('assets/images/select-arrow.svg') no-repeat center right;
+}
+#submit-subscription{
+    font-size:var(--font-size-footer);
+    font-family: inherit;
+    font-weight: 300;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#submit-subscription:hover{
+    color:var(--color-main);
+}
+#footer-connect{
+    margin-bottom:80px;
+}
+#footer-connect .social-lbl{
+    margin-bottom:10px;
+    font-size:var(--font-size-footer);
+    font-weight: var(--font-weight-300);
+    font-family: inherit;
+}
+#footer-bottom-cont{
+    font-size:18px;
+}
+#footer-bottom-cont .info{
+    font-size:10px;
+}
+#footer-bottom-cont .info > *{
+    margin:10px 15px;
+}
+@media (min-width: 1400px){
+    .container{
+        max-width:1374px;
+    }
+}
